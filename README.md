@@ -37,7 +37,7 @@ This project consists of the realization of an application that calculates an av
 ## Introduction
 
 With the recent news about covid, the considered pandemic that caused countries to stop and caused instability at a global level, we decided to develop a project with the aim of exploring third party apis and making a global trace about the situation regarding the day and the junction of everything.
-This project was developed by three computer engineering students.
+This project was developed by four computer engineering students.
 
 
 ## Demonstration
@@ -62,6 +62,8 @@ I appreciate any bug reported or improvement made!
 - [ThurDev](https://github.com/thurdev)
 - [JozDev](https://github.com/jozdev)
 - [ToniDev](https://github.com/tonidev)
+- [ArcherXD](https://github.com/ArcherXD)
+
 
 
 ## License
