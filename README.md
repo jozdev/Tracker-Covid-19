@@ -61,7 +61,7 @@ I appreciate any bug reported or improvement made!
 
 - [ThurDev](https://github.com/thurdev)
 - [JozDev](https://github.com/jozdev)
-- [ToniDev](https://github.com/tonidev)
+- [Tony2104](https://github.com/Tony2104)
 - [ArcherXD](https://github.com/ArcherXD)
 
 
