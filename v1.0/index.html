@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Covid-19</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""><img
+                            src='https://camo.githubusercontent.com/a8c4754dfbcd606a8e19151cdfed36b48e5982f9/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3435303731383638313439323735303334342f3639343439323038353230353836303335322f76697275735f636f726f6e6176697275735f636f7669645f636f7669645f69636f6e5f3133343832392e706e67'
+                            style="width:30px;height:30px;"></a></li>
+                <li><a href=""><b>TRACKER COVID-19</b></a></li>
+                <div class="a" id="tracker">
+                    <li><a href="" name="p1" id="p1"></a></li>
+                    <li><a href="" style="color:#e81a3c;" name="p2" id="p2"></a></li>
+                    <li><a href="" style="color:#34c1ad;" name="p3" id="p3"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body">
+
+        <div class="icon"><img
+                src='https://camo.githubusercontent.com/a8c4754dfbcd606a8e19151cdfed36b48e5982f9/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3435303731383638313439323735303334342f3639343439323038353230353836303335322f76697275735f636f726f6e6176697275735f636f7669645f636f7669645f69636f6e5f3133343832392e706e67'
+                style='width:250px;height:250px;'></div>
+
+        <div>
+            <div class="input">
+                <input type="text" placeholder="Search for Covid-19 Country Info" id="country">
+                <i class="fas fa-search" id="search" style="cursor:pointer;"></i>
+            </div>
+        </div>
+
+        <div class="imgs">
+
+            <div id="found" style="display: none;width:200px;border: none;">
+                <li><p style="color:grey;" id="paragraph1"></p></li>
+                <br>
+                <li><p style="color:#e81a3c;" id="paragraph2"></p></li>
+                <br>
+                <li><p style="color:#34c1ad;" id="paragraph3"></p></li>
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </div>
+    <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.js'
+        integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
+    <script src="./js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/5e7abc4b74.js" crossorigin="anonymous"></script>
+    <script>
+        setInterval(() => {
+            $.ajax({
+            url: 'https://coronavirus-19-api.herokuapp.com/all',
+            method: 'GET',
+            success: (data) => {
+                let a1 = document.getElementById("p1");
+                let a2 = document.getElementById("p2");
+                let a3 = document.getElementById("p3");
+
+                var text1 = `Total Cases: ${data.cases}`;
+                var text2 = `Total Deaths: ${data.deaths}`;
+                var text3 = `Total Recovered: ${data.recovered}`;
+
+                a1.innerHTML = text1;
+                a2.innerHTML = text2;
+                a3.innerHTML = text3;
+            }
+        });
+        }, 100);
+        
+    </script>
+</body>
+
+</html>

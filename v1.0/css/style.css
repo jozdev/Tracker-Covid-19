@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color: rgba(11, 9, 62, 1);*//*10, 43, 70*//*5, 3, 62*/
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("./../img/multigrid.png");
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(14, 23, 38);
+    position: relative;
+    padding: 7px 0; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    align-content: center;
+    line-height: 36px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    margin: 0px 15px;
+    float: left;
+}
+
+ul li a {
+    color: rgb(187, 201, 224);
+    font-size: 0.875rem;
+}
+
+.a {
+    float: right;
+    font-weight: bold;
+}
+
+.a a {
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.a a:hover {
+    background-color: rgb(39, 53, 82);
+    border-radius: 5px;
+}
+
+.button1 {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 11pt;
+    color: white;
+    background: #34c1ad;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.body {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.icon {
+    margin: 3% 0;
+}
+
+.input {
+    margin-bottom: 30px;
+    color:white;
+}
+
+input {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff0a;
+    border: 1px solid rgb(137, 160, 181, .3);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease-in;
+}
+
+.fas {
+    position: relative;
+    font-size: 13pt;
+    right: 50px;
+    color: rgb(137, 160, 181);
+}
+
+input:hover {
+    background-color: rgb(39, 53, 82);
+    color:white;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: rgb(137, 160, 181);
+    font-size: 12pt;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.button {
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 11pt;
+    color: white;
+    background: #34c1ad;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.fab  {
+    margin-right: 10px;
+    font-size: 18pt;
+}
+
+.video {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.video a {
+    font-size: 9pt;
+    color: rgb(187, 201, 224);
+}
+
+.video a i {
+    margin-right: 5px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 195px);
+    width: 100%;
+    justify-content: center;
+    grid-column-gap: 20px;
+    margin-top: 60px;
+}
+
+.imgs div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+
+}
