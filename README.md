@@ -42,7 +42,7 @@ This project was developed by four computer engineering students.
 
 ## Demonstration
 
-h2 align="center">Home</h1>
+<h2 align="center">Home</h1>
 <p align="center">
  <img src="https://i.gyazo.com/f72186261c87dda7f1573f1299bdddc1.png" width=550px" align="center">
  
