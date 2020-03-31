@@ -22,7 +22,7 @@ This project consists of the realization of an application that calculates an av
 
 ## Documentation
 
-- **Covid-19 API** https://coronavirus-19-api.herokuapp.com/all
+- **Covid-19 API** https://coronavirus-19-api.herokuapp.com
 
 
 
