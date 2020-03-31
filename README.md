@@ -53,7 +53,7 @@ After entering a search, a result is given through an api provided by another ap
 
 
 Being a project dealing with a global theme in relation to being a pandemic, the target audience is all users with enough curiosity to search for news on the topic.                                                                                                                           
-<p align="center"><img src="https://i.gyazo.com/9a33dfeaeaef4061a01c2c01d32ce4e8.png" width=550px" align="center"></p>
+<p align="center"><img src="https://i.gyazo.com/9a33dfeaeaef4061a01c2c01d32ce4e8.png" align="center"></p>
 
 
 ## Bugs
