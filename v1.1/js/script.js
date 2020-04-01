@@ -21,6 +21,7 @@ document.getElementById("search").addEventListener("click", () => {
                        let found = res.find(countries => countries.country.toUpperCase() == input.toUpperCase());
                        if(found){
                         if(hasfound == true){}else{
+
                           /* Make a request to restcountries and get alpha2code of the specific country */
                         request.open('GET', 'https://restcountries.eu/rest/v2/name/'+input+'?fullText=true', true)
                         request.onload = function() {
@@ -38,6 +39,9 @@ document.getElementById("search").addEventListener("click", () => {
 
                         } else {
                             console.log('error')
+                            let getresultfrom = document.getElementById("getresultfrom");
+                            var resulttext1 = `Results from ${document.getElementById("country").value}`;
+                            getresultfrom.innerHTML = resulttext1;
                         }
                         }
                         
