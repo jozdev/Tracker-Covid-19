@@ -77,4 +77,4 @@ I appreciate any bug reported or improvement made!
 MIT
 
 
- <i style='text-align: center; color: red;font-size: 13px;'>CopyRight © Arthur Brites,Joao Magalhaes,Antonio Rodrigues 2020</i> 
+ <i style='text-align: center; color: red;font-size: 13px;'>CopyRight © Arthur Brites,Joao Magalhaes,João Cunha,Antonio Rodrigues 2020</i> 
