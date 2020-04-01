@@ -2,7 +2,7 @@
   <img src="https://cdn.discordapp.com/attachments/450718681492750344/694492085205860352/virus_coronavirus_covid_covid_icon_134829.png" width=150px" align="center">
 </p>
                                                                         
-<h1 align="center">Tracker Covid-19 v1.0 [OUTDATED]</h1>
+<h1 align="center">Tracker Covid-19 v1.0 [outdated]</h1>
 <p align="center" style="color: #ccc;">
 This project consists of the realization of an application that calculates an average of information about covid-19 in relation to the world level. Here it will be possible to obtain results of cases, deaths, recoveries at a global level, while at country level the user is asked to enter a country where he will demonstrate detailed information about the country from its appearance to those infected, deaths and recoveries the day it is viewed.
 </p>
