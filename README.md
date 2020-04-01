@@ -44,7 +44,7 @@ This project was developed by four computer engineering students.
 
 <h2 align="center">Home</h1>
 <p align="center">
- <img src="https://i.gyazo.com/f72186261c87dda7f1573f1299bdddc1.png"  align="center">
+ <img src="https://i.gyazo.com/63c58438492689313a367c7c28d579fe.png"  align="center">
  
  <p align="center">In this project it is possible to see all confirmed cases, deaths and recovered worldwide and there is an input for the user obtain results about covid-19 country name!
 After entering a search, a result is given through an api provided by another application. It is a simple but useful covid-19 tracker that we put into practice some of our knowledge about apis.</p></p>
@@ -53,7 +53,7 @@ After entering a search, a result is given through an api provided by another ap
 
 
 Being a project dealing with a global theme in relation to being a pandemic, the target audience is all users with enough curiosity to search for news on the topic.                                                                                                                           
-<p align="center"><img src="https://i.gyazo.com/63c58438492689313a367c7c28d579fe.png" align="center"></p>
+<p align="center"><img src="https://i.gyazo.com/9a33dfeaeaef4061a01c2c01d32ce4e8.png" align="center"></p>
 
 
 ## Bugs
