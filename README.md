@@ -28,7 +28,6 @@ This project consists of the realization of an application that calculates an av
 
 ## Warning
 
-- Outside the readme, reports will be found where the language corresponds to the Portuguese language.
 - This project was developed with the intention of dealing with third party apis.
 
 
