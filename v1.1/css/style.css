@@ -52,27 +52,12 @@ ul li a {
     transition: 0.5s;
 }
 
- #p1:hover {
-    background-color: rgb(39, 53, 82);
-    border-radius: 5px;
-    padding:2px;
+#p5:hover, #p4:hover, #p3:hover, #p2:hover, #p1:hover {
+
     cursor:Default;
 
 }
-#p2:hover {
-    background-color: rgb(39, 53, 82);
-    border-radius: 5px;
-    padding:2px;
-    cursor:Default;
 
-}
-#p3:hover {
-    background-color: rgb(39, 53, 82);
-    border-radius: 5px;
-    padding:2px;
-    cursor:Default;
-
-}
 
 .button1 {
     padding: 10px 15px;
