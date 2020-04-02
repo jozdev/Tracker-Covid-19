@@ -43,7 +43,7 @@ This project was developed by four computer engineering students.
 
 <h2 align="center">Home</h1>
 <p align="center">
- <img src="https://i.gyazo.com/f702c7199e90021a6e64e456a1dd537a.png"  align="center">
+ <img src="https://i.gyazo.com/740ea62cc7a210a9167d9c9715e816e4.png"  align="center">
  
  <p align="center">In this project it is possible to see all confirmed cases, deaths and recovered worldwide and there is an input for the user obtain results about covid-19 country name!
 After entering a search, a result is given through an api provided by another application. It is a simple but useful covid-19 tracker that we put into practice some of our knowledge about apis.</p></p>
