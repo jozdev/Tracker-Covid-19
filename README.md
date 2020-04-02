@@ -16,7 +16,7 @@ This project consists of the realization of an application that calculates an av
 - [Demonstration](#demonstration)
 - [TargetAudience](#targetaudience)
 - [Bugs](#bugs)
-- [Support](#support)
+- [Contributors](#contributors)
 - [License](#license)
 
 
@@ -62,14 +62,19 @@ I appreciate any bug reported or improvement made!
 - Before reporting bugs:
 [check if they have already been reported](https://github.com/jozdev/CodeBetter/issues)
                                                                                                                                       
-## Support
+## Contributors
 
-- [ThurDev](https://github.com/thurdev)
-- [JozDev](https://github.com/jozdev)
-- [Tony2104](https://github.com/Tony2104)
-- [ArcherXD](https://github.com/ArcherXD)
-
-
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/jozdev"><img src="https://avatars0.githubusercontent.com/u/58850639?s=460&u=7b99346947ef28fb23b98604356fd3b3013c418b&v=4" width="100px;" alt=""/><br /><sub><b>jozdev</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/thurdev"><img src="https://avatars0.githubusercontent.com/u/34294813?s=460&u=725e4548b484417d368e03fb7c619bd3cbd0f12f&v=4" width="100px;" alt=""/><br /><sub><b>ThurDev</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ArcherXD"><img src="https://avatars2.githubusercontent.com/u/62949867?s=460&v=4" width="100px;" alt=""/><br /><sub><b>ArcherXD</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://404discord.xyz/"><img src="https://avatars3.githubusercontent.com/u/55550291?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Tony2104</b></sub></a><br /><a title="Code">💻</a></td>
+  </tr>
+</table>
 
 ## License
 
