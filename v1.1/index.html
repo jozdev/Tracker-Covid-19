@@ -1,3 +1,9 @@
+<!-- TODO:Fazer top15 paises mais afetados-->
+<!-- TODO:Fazer um countup dos dias desde que existe dados 25 de janeiro-->
+<!-- TODO:Estudar sobre graficos-->
+<!-- TODO:Fazer um sistema de somar todos os casos de hoje e mostrar-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,14 +13,53 @@
     <title>Tracker Covid-19</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://camo.githubusercontent.com/a8c4754dfbcd606a8e19151cdfed36b48e5982f9/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3435303731383638313439323735303334342f3639343439323038353230353836303335322f76697275735f636f726f6e6176697275735f636f7669645f636f7669645f69636f6e5f3133343832392e706e67">
+
     <style>
         body {
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: "Maison Neue", sans-serif;
+            overflow-x:hidden;
 
         }
         li {
             list-style-type: none;
         }
+        header
+        {
+            font-family: "Maison Neue", sans-serif;
+            text-align: center;
+            font-size: 25px;	
+        }
+
+        #info
+        {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        a{
+            color: #074E8C;
+        }
+       
+
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #182338; 
+        border-radius: 1px;
+        background-color:#182338;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #343f57; 
+        border-radius: 10px;
+        }
+
+        
     </style>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
@@ -22,17 +67,20 @@
 
 <body>
 
-    <header>
+    <header >
         <nav>
             <ul>
-                <li><a href=""><img
-                            src='https://camo.githubusercontent.com/a8c4754dfbcd606a8e19151cdfed36b48e5982f9/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3435303731383638313439323735303334342f3639343439323038353230353836303335322f76697275735f636f726f6e6176697275735f636f7669645f636f7669645f69636f6e5f3133343832392e706e67'
-                            style="width:30px;height:30px;"></a></li>
-                <li><a href=""><b>TRACKER COVID-19</b></a></li>
+
+                <li><a href="" style="color:White;font-family: 'Dancing Script', cursive;"><i class="fas fa-virus" style="width:125px;font-size:25px;"></i></a></li>
                 <div class="a" id="tracker">
                     <li><p style="color:#919191;font-size:14px;" name="p1" id="p1"></a></li>
                     <li><p style="color:#e81a3c;font-size:14px;" name="p2" id="p2"></a></li>
                     <li><p style="color:#34c1ad;font-size:14px;" name="p3" id="p3"></a></li>
+                    <li><p style="color:#919191;font-size:14px;" name="p4" id="p4"></a></li>
+                    <li><p style="color:#919191;font-size:14px;" name="p5" id="p5"></a></li>
+                    <li><p style="color:#919191;font-size:14px;" name="p6" id="p6"></a></li>
+
+
                 </div>
             </ul>
         </nav>
@@ -53,22 +101,25 @@
 
         <div class="imgs" style="">
 <center>
-            <div id="found" style="background-color: rgb(14, 23, 38);padding:10px;display: none;width:500px;height:auto;border: none;border-radius:10px;">
+            <div id="found" style="background-color: rgb(14, 23, 38); box-shadow: -8px 8px 6px -6px black;
+            padding:10px;display: none;width:500px;height:auto;border: none;border-radius:1px;">
                 <li><p id="getresultfrom"></p></li>
                 <br>
+                <table><tr><td>
                 <li><p style="color:grey;" id="population"></p></li>
-                <br>
+                <br><br></td></tr><tr><td>
                 <li><p style="color:grey;" id="paragraph1"></p></li>
-                <br>
+                <br></td><td>
                 <li><p style="color:#e81a3c;" id="paragraph2"></p></li>
-                <br>
+                <br></td><td>
                 <li><p style="color:#34c1ad;" id="paragraph3"></p></li>
-                <br><br>
+                <br></td></tr><tr><td>
                 <li><p style="color:grey;" id="paragraph4"></p></li>
-                <br>
+                <br></td><td>
                 <li><p style="color:#e81a3c;" id="paragraph5"></p></li>
-                <br><br>
-                <li><p style="color:grey" id="paragraph6"></p></li>
+                <br></td></tr><tr><td><br>
+                <li><p style="color:grey" id="paragraph6"></p></li></td></tr>
+            </table>
             </div>
 
         </div>
@@ -76,7 +127,6 @@
         <div>
 
         </div>
-
     </div>
     <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
     <script src='https://code.jquery.com/jquery-3.4.1.js'
@@ -84,6 +134,7 @@
     <script src="./js/script.js"></script>
 
     <script src="https://kit.fontawesome.com/5e7abc4b74.js" crossorigin="anonymous"></script>
+    
     <script>
         /* It will receive data of total information about covid-19 and show in the navbar */
         setInterval(() => {
@@ -91,22 +142,48 @@
             url: 'https://coronavirus-19-api.herokuapp.com/all',
             method: 'GET',
             success: (data) => {
+                /*  Will make a count from data that has access to the covid api */
+                const oneDay = 24 * 60 * 60 * 1000; 
+                const firstDate = new Date(2020, 0, 25);
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+                var yyyy = today.getFullYear();
+                const diffDays = Math.round(Math.abs((firstDate - today) / oneDay));
+
+
+                let drate = data.deaths/data.cases*100; /* Get global death rate */
+                let result1 = Number(drate).toFixed(2); /* Show only 2 decimal places */
+                let rrate = data.recovered/data.cases*100; /* Get global recovered rate */
+                let result2 = Number(rrate).toFixed(2); /* Show only 2 decimal places */
+
                 let a1 = document.getElementById("p1");
                 let a2 = document.getElementById("p2");
                 let a3 = document.getElementById("p3");
+                let a4 = document.getElementById("p4");
+                let a5 = document.getElementById("p5");
+                let a6 = document.getElementById("p6");
 
-                var text1 = `Total Cases: ${data.cases}`;
+                var text1 = `Total Cases: ${data.cases} `;
                 var text2 = `Total Deaths: ${data.deaths}`;
                 var text3 = `Total Recovered: ${data.recovered}`;
+                var text4 = `Days: ${diffDays}`;
+                var text5 = `Death Rate: ${result1}%`;
+                var text6 = `Recovery Rate: ${result2}%`;
+                
 
                 a1.innerHTML = text1;
                 a2.innerHTML = text2;
                 a3.innerHTML = text3;
+                a4.innerHTML = text4;
+                a5.innerHTML = text5;
+                a6.innerHTML = text6;
             }
         });
         }, 100);
         
     </script>
+
 </body>
 
 </html>
