@@ -1,16 +1,10 @@
-<!-- TODO:Fazer top15 paises mais afetados-->
-<!-- TODO:Fazer um countup dos dias desde que existe dados 25 de janeiro-->
-<!-- TODO:Estudar sobre graficos-->
-<!-- TODO:Fazer um sistema de somar todos os casos de hoje e mostrar-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracker Covid-19</title>
+    <title>Tracker CoronaVirus</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -59,7 +53,6 @@
         border-radius: 10px;
         }
 
-        
     </style>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
@@ -67,11 +60,12 @@
 
 <body>
 
-    <header >
+    <header>
         <nav>
             <ul>
 
-                <li><a href="" style="color:White;font-family: 'Dancing Script', cursive;"><i class="fas fa-virus" style="width:125px;font-size:25px;"></i></a></li>
+                <li><a id="menu" style="cursor:pointer;color:White;font-family: 'Dancing Script', cursive;">
+                <i class="fas fa-virus" style="width:125px;font-size:25px;"></i></a></li>
                 <div class="a" id="tracker">
                     <li><p style="color:#919191;font-size:14px;" name="p1" id="p1"></a></li>
                     <li><p style="color:#e81a3c;font-size:14px;" name="p2" id="p2"></a></li>
@@ -86,15 +80,15 @@
         </nav>
     </header>
 
-    <div class="body">
 
+    <div class="body">
         <div class="icon"><img
                 src='https://camo.githubusercontent.com/a8c4754dfbcd606a8e19151cdfed36b48e5982f9/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3435303731383638313439323735303334342f3639343439323038353230353836303335322f76697275735f636f726f6e6176697275735f636f7669645f636f7669645f69636f6e5f3133343832392e706e67'
-                style='width:250px;height:250px;'></div>
-
+                style='width:225px;height:225px;'></div><li><p style="color:grey;" id="pdate"></p></li>
+                <br><br>
         <div>
             <div class="input">
-                <input type="text" placeholder="Search for Covid-19 Country Info" id="country">
+                <input type="text" placeholder="Search for Country Info" id="country">
                 <i class="fas fa-search" id="search" style="cursor:pointer;"></i>
             </div>
         </div>
@@ -127,6 +121,7 @@
         <div>
 
         </div>
+        <br><br>
     </div>
     <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
     <script src='https://code.jquery.com/jquery-3.4.1.js'
@@ -136,6 +131,7 @@
     <script src="https://kit.fontawesome.com/5e7abc4b74.js" crossorigin="anonymous"></script>
     
     <script>
+
         /* It will receive data of total information about covid-19 and show in the navbar */
         setInterval(() => {
             $.ajax({
@@ -149,8 +145,11 @@
                 var dd = String(today.getDate()).padStart(2, '0');
                 var mm = String(today.getMonth() + 1).padStart(2, '0'); 
                 var yyyy = today.getFullYear();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
                 const diffDays = Math.round(Math.abs((firstDate - today) / oneDay));
-
+                var date = dd + '/' + mm + '/' + yyyy + ' ' + h + ':' + m + ':' + s;
 
                 let drate = data.deaths/data.cases*100; /* Get global death rate */
                 let result1 = Number(drate).toFixed(2); /* Show only 2 decimal places */
@@ -163,6 +162,7 @@
                 let a4 = document.getElementById("p4");
                 let a5 = document.getElementById("p5");
                 let a6 = document.getElementById("p6");
+                let adate = document.getElementById("pdate");
 
                 var text1 = `Total Cases: ${data.cases} `;
                 var text2 = `Total Deaths: ${data.deaths}`;
@@ -170,7 +170,7 @@
                 var text4 = `Days: ${diffDays}`;
                 var text5 = `Death Rate: ${result1}%`;
                 var text6 = `Recovery Rate: ${result2}%`;
-                
+                var textdate = `${date} &nbsp; <i class="far fa-clock"></i>`;
 
                 a1.innerHTML = text1;
                 a2.innerHTML = text2;
@@ -178,6 +178,7 @@
                 a4.innerHTML = text4;
                 a5.innerHTML = text5;
                 a6.innerHTML = text6;
+                adate.innerHTML = textdate;
             }
         });
         }, 100);
