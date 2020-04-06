@@ -60,7 +60,7 @@ Being a project dealing with a global theme in relation to being a pandemic, the
 I appreciate any bug reported or improvement made!
 
 - Before reporting bugs:
-[check if they have already been reported](https://github.com/jozdev/CodeBetter/issues)
+[check if they have already been reported](https://github.com/jozdev/Tracker-Covid-19/issues)
                                                                                                                                       
 ## Contributors
 
